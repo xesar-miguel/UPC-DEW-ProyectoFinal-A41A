@@ -6,7 +6,7 @@
 ## Scrumy ##
 <a href="http://scrumy.com/poor17immoral" target="_blank">Proyecto en Scrumy</a>
 
-## Equipo
+## Equipo ##
 
 | Nombre        | Email                   | Github         | UPC            |
 | ------------- |:-----------------------:|:--------------:|:--------------:|
@@ -14,3 +14,7 @@
 | Max Rosales   | mrosalesdiaz@gmail.com  | mrosalesdiaz   | u921202        |
 | Lorena Robles | loren9388@gmail.com     | Loren1ta       |                |
 | Cesar Illesca | xesar.miguel@gmail.com  | --             |                |
+
+## Red social propuesta ##
+
+Twitter
