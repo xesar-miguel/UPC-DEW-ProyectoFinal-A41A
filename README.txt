@@ -12,3 +12,4 @@ Proyecto Final DEW A41A
   + Max Rosales - mrosalesdiaz@gmail.com . mrosalesdiaz
   + Lorena Robles - loren9388@gmail.com . Loren1ta
   + Cesar Illesca - xesar.miguel@gmail.com
+  + Carolina García - carolina.garru@gmail.com - escarogar
