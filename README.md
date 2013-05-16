@@ -14,6 +14,7 @@
 | Max Rosales   | mrosalesdiaz@gmail.com  | mrosalesdiaz   | u921202        |
 | Lorena Robles | loren9388@gmail.com     | Loren1ta       |                |
 | C&eacute;sar Illesca | xesar.miguel@gmail.com  | --             |                |
+| Carolina Garc&iacute;a Ruiz | carolina.garru@gmail.com  | escarogar | u201000149 |
 
 ## Red social propuesta ##
 
