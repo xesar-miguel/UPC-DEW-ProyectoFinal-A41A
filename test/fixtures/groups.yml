@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  snamegroup: MyString
+  snamegroup: 
+  sstategroup: 
+  smusicstyle: MyString
+
+two:
+  snamegroup: MyString
+  snamegroup: 
+  sstategroup: 
+  smusicstyle: MyString

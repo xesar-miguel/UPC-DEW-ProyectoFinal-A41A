@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stypedocum: 
+  snumdocum: MyString
+  sfirstname: MyString
+  slastname1: MyString
+  slastname2: MyString
+  ssex: 
+  semail: MyString
+  spassword: MyString
+  type_person: 
+
+two:
+  stypedocum: 
+  snumdocum: MyString
+  sfirstname: MyString
+  slastname1: MyString
+  slastname2: MyString
+  ssex: 
+  semail: MyString
+  spassword: MyString
+  type_person: 

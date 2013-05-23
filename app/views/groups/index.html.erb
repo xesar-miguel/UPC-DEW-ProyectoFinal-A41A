@@ -1,0 +1,29 @@
+<h1>Listing groups</h1>
+
+<table>
+  <tr>
+    <th>Snamegroup</th>
+    <th>Snamegroup</th>
+    <th>Sstategroup</th>
+    <th>Smusicstyle</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @groups.each do |group| %>
+  <tr>
+    <td><%= group.snamegroup %></td>
+    <td><%= group.snamegroup %></td>
+    <td><%= group.sstategroup %></td>
+    <td><%= group.smusicstyle %></td>
+    <td><%= link_to 'Show', group %></td>
+    <td><%= link_to 'Edit', edit_group_path(group) %></td>
+    <td><%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Group', new_group_path %>

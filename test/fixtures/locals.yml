@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_local: 
+  sname: MyString
+  saddress: MyString
+  sdistrict: MyString
+  saddressgooglemap: MyString
+  sphone: MyString
+
+two:
+  id_local: 
+  sname: MyString
+  saddress: MyString
+  sdistrict: MyString
+  saddressgooglemap: MyString
+  sphone: MyString

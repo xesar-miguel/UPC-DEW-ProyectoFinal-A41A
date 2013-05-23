@@ -1,0 +1,33 @@
+<%= form_for(@group) do |f| %>
+  <% if @group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+      <% @group.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :snamegroup %><br />
+    <%= f.text_field :snamegroup %>
+  </div>
+  <div class="field">
+    <%= f.label :snamegroup %><br />
+    <%= f.text_field :snamegroup %>
+  </div>
+  <div class="field">
+    <%= f.label :sstategroup %><br />
+    <%= f.text_field :sstategroup %>
+  </div>
+  <div class="field">
+    <%= f.label :smusicstyle %><br />
+    <%= f.text_field :smusicstyle %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

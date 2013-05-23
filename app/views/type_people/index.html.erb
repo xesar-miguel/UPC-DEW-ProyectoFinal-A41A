@@ -1,0 +1,25 @@
+<h1>Listing type_people</h1>
+
+<table>
+  <tr>
+    <th>Ntypeperson</th>
+    <th>Sdesctypeperson</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @type_people.each do |type_person| %>
+  <tr>
+    <td><%= type_person.ntypeperson %></td>
+    <td><%= type_person.sdesctypeperson %></td>
+    <td><%= link_to 'Show', type_person %></td>
+    <td><%= link_to 'Edit', edit_type_person_path(type_person) %></td>
+    <td><%= link_to 'Destroy', type_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Type person', new_type_person_path %>

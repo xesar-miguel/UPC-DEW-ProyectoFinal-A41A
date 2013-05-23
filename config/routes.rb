@@ -1,4 +1,19 @@
 Ising::Application.routes.draw do
+  resources :group_members
+
+
+  resources :groups
+
+
+  resources :locals
+
+
+  resources :users
+
+
+  resources :type_people
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
