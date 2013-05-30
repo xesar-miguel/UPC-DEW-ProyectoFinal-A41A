@@ -11,3 +11,66 @@
  *= require_self
  *= require_tree .
  */
+ * {
+  color: #fff;
+}
+body{
+  background-image: url(bg.jpg); 
+  margin: 0px;
+  overflow-y:scroll;
+}
+
+/** Social Icons Bar **/
+.social_icons {
+  float:right;
+  padding:9px 0 0 0;
+}
+.social_icons ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+.social_icons li {
+  position:relative;
+  top:0;
+  padding:0;
+  margin:2px 7px 10px 0;
+  display:inline-block;
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+}
+.social_icons li a {
+  width:27px;
+  height:24px;
+  display:block;
+  background:#3e3e3e;
+  border-bottom:3px solid #232323;
+  text-align:center;
+  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease 0s;
+}
+.social_icons li a:hover {background:#26ae90;border-bottom:3px solid #1f8c74;
+}
+.social_icons li a:focus {background:#26ae90;border-bottom:3px solid #26ae90;
+}
+/*****/
+
+
+.site-header {
+  padding-top: 10px;
+  background-image: url(header_bg.png); 
+  background-repeat: repeat-x;
+}
+
+#side-header-div{
+}
+
+#side-header-div .onerow{
+  background-color: #fff;
+  height: 110px;
+}
+
+
+.content {
+  background-color: #fff;
+}

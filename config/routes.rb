@@ -1,4 +1,46 @@
 Ising::Application.routes.draw do
+  root :to => redirect("/home")
+  
+  resources :comments
+
+
+  resources :concerts
+
+
+  resources :bookings
+
+
+  resources :users
+
+
+  resources :bands
+
+
+  resources :lounges
+
+
+  resources :usertypes
+
+
+  resources :user_bands
+
+
+  resources :tickets
+
+
+  resources :scores
+
+
+  resources :concertstatuses
+
+
+  resources :distritos
+
+
+  resources :home
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
