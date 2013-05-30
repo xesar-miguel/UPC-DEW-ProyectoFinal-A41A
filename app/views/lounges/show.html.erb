@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @lounge.name %>
+</p>
+
+<p>
+  <b>Direction:</b>
+  <%= @lounge.direction %>
+</p>
+
+<p>
+  <b>Geolocation:</b>
+  <%= @lounge.geolocation %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @lounge.phone %>
+</p>
+
+<p>
+  <b>Distrito:</b>
+  <%= @lounge.distrito %>
+</p>
+
+
+<%= link_to 'Edit', edit_lounge_path(@lounge) %> |
+<%= link_to 'Back', lounges_path %>

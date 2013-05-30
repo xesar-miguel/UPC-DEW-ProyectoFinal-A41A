@@ -1,0 +1,31 @@
+<h1>Listing lounges</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Direction</th>
+    <th>Geolocation</th>
+    <th>Phone</th>
+    <th>Distrito</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lounges.each do |lounge| %>
+  <tr>
+    <td><%= lounge.name %></td>
+    <td><%= lounge.direction %></td>
+    <td><%= lounge.geolocation %></td>
+    <td><%= lounge.phone %></td>
+    <td><%= lounge.distrito %></td>
+    <td><%= link_to 'Show', lounge %></td>
+    <td><%= link_to 'Edit', edit_lounge_path(lounge) %></td>
+    <td><%= link_to 'Destroy', lounge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lounge', new_lounge_path %>

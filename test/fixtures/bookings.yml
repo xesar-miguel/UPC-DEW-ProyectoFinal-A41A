@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  start: 2013-05-19 02:24:14
+  end: 2013-05-19 02:24:14
+  year: 1
+  month: 1
+  day: 1
+  dayofweek: 1
+  lounge: 
+
+two:
+  description: MyString
+  start: 2013-05-19 02:24:14
+  end: 2013-05-19 02:24:14
+  year: 1
+  month: 1
+  day: 1
+  dayofweek: 1
+  lounge: 

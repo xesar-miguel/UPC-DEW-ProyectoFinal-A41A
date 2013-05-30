@@ -1,252 +1,77 @@
+# encoding: utf-8
 <!DOCTYPE html>
 <html>
 <head>
-  <title>iSing | Las mejores bandas los mejores conciertos</title>
-  <%= stylesheet_link_tag    "onepcssgrid.css", :media => "all" %>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <style>
 
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>iSing | Las Mejores bandas Los Mejores conciertos</title>
+    <meta name="description" content="Proyecto UPC">
+    <meta name="author" content="UPC Team">
+		<!-- Default by Rails
+		================================================== -->
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<%= csrf_meta_tags %>
 
-  /**** navigation bar ******************/
-  .main-navigation ul.nav-menu,
-  .main-navigation div.nav-menu > ul {
-    background:#3e3e3e;
-    display: inline-block !important;
-    text-align: left;
-    width: 100%;
-    border-bottom:4px #7c7c7c solid;
-  }
-  .main-navigation ul {
-    margin: 0;
-    text-indent: 0;
-  }
-  .main-navigation li {
-    display: inline-block;
-    text-decoration: none;
-    position:relative;
-    margin:0 -4px 0 0;
-    padding-right:2px;
-    background:url(images/menu_li.png) repeat-y right top;
-  }
-  .main-navigation li a {
-    color: #fff;
-    font-size:14px;
-    text-transform:uppercase;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight:400;
-    line-height: 47px;
-    white-space: nowrap;
-    position:relative;
-    padding: 0 19px;
-    display:inline-block;
-    transition: background-color 200ms ease 0s;
-    -webkit-transition: background-color 200ms ease 0s;
-  }
-  .main-navigation li a:hover,
-  .main-navigation li:hover a,
-  .main-navigation li.current-menu-item a  {
-    color:#fff;
-    background:#26ae90;
-    border-bottom: 4px #bebebe solid;
-    margin-bottom:-4px;
-  }
-  .main-navigation li ul {
-    display: none;
-    margin: 0;
-    margin-top:4px;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    z-index: 1;
-    border-bottom:0;
-  }
-  .main-navigation li ul li {
-    padding: 0 0 2px 0;
-    background:url(images/menu_li2.png) repeat-x left bottom;
-  }
-  .main-navigation li ul li:last-child {
-    padding: 0;
-    background:none;
-  }
-  .main-navigation li ul ul {
-    top: 0;
-    left: 100%;
-    margin-top:0;
-    padding-left:2px;
-    background:url(images/menu_li.png) repeat-y left top;
-  }
-  .main-navigation ul li:hover > ul {
-    border-left: 0;
-    display: block;
-  }
-  .main-navigation li li a,
-  .main-navigation li:hover li a {
-    background: #3e3e3e;
-    color:#fff;
-    display: block;
-    font-size: 13px;
-    line-height: 14px;
-    padding: 8px 14px 9px 24px;
-    width: 130px;
-    white-space: normal;
-    border-bottom:0;
-    margin-bottom:0;
-  }
-  .main-navigation li li a:hover,
-  .main-navigation li li:hover a,
-  .main-navigation li li.current-menu-item a {
-    background: #26ae90;
-    color: #fff;
-    border-bottom:0;
-    margin-bottom:0;
-  }
-  .main-navigation .current-menu-item > a,
-  .main-navigation .current-menu-ancestor > a,
-  .main-navigation .current_page_item > a,
-  .main-navigation .current_page_ancestor > a {
-  }
-  .main-navigation li li li a {
-    background: #3e3e3e !important;
-    color:#fff !important;
-  }
-  .main-navigation li li li a:hover,
-  .main-navigation li li li.current-menu-item a {
-    background: #26ae90 !important;
-    color:#fff !important;
-  }
-  </style>
-</head>
-<body>
-  <header class="site-header">
-    <div id="side-header-div" class="onepcssgrid-1000">
-      <div class="onerow" >
-        <div class="col4" >
-          <a href="#" title="iSing" rel="home">
-            <!-- img src="logo.png" alt="" -->
-          </a>
-        </div>
-        <div class="col6">Las Mejores Bandas, Los Mejores Conciertos</div>
-        <div class="col2 last social_icons" >
-          <ul>
-            <li>
-              <a href="#" title="Facebook">
-                <img src="/assets/facebook-icon.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Twitter">
-                <img src="assets/twitter-icon.png" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-    </div>
-  </header>
-
-  <div class="onepcssgrid-1000">
-    <div class="onerow">
-      <div class="col12 last">
-
-        <div style="width:960px; ">
-          <nav id="site-navigation" class="main-navigation" role="navigation">
-            <div class="menu-main_menu-container">
-              <ul id="menu-main_menu" class="nav-menu">
-                <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15 current_page_item menu-item-16">
-                  <a href="/">Inicio</a>
-                </li>
-                <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-                  <a href="#">Pages</a>
-                  <ul class="sub-menu">
-                    <li id="menu-item-625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-625">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=211">About Us</a>
-                    </li>
-                    <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
-                      <a href="#">Demo Submenu</a>
-                      <ul class="sub-menu">
-                        <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-                          <a href="#">Demo Submenu 2.1</a>
-                        </li>
-                        <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-                          <a href="#">Demo Submenu 2.2</a>
-                        </li>
-                        <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-                          <a href="#">Demo Submenu 2.3</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10">
-                  <a href="#">Pagebilder</a>
-                  <ul class="sub-menu">
-                    <li id="menu-item-626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-626">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=13">Alerts</a>
-                    </li>
-                    <li id="menu-item-627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=362">Buttons</a>
-                    </li>
-                    <li id="menu-item-618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-618">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=403">Columns</a>
-                    </li>
-                    <li id="menu-item-619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-619">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=425">Gallery</a>
-                    </li>
-                    <li id="menu-item-620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-620">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=445">Google maps</a>
-                    </li>
-                    <li id="menu-item-621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-621">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=456">Tabs + Accordion</a>
-                    </li>
-                    <li id="menu-item-622" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-622">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=497">Teaser grid</a>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
-                  <a href="#">Galleries</a>
-                  <ul class="sub-menu">
-                    <li id="menu-item-630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=597">Gallery 1</a>
-                    </li>
-                    <li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=615">Gallery 2</a>
-                    </li>
-                    <li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-628">
-                      <a href="http://demo.templatesmint.com/wp12/?page_id=617">Gallery 3</a>
-                    </li>
-                  </ul>
-                </li>
-                <li id="menu-item-623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-623">
-                  <a href="http://demo.templatesmint.com/wp12/?page_id=42">Blog</a>
-                </li>
-                <li id="menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624">
-                  <a href="http://demo.templatesmint.com/wp12/?page_id=204">Contacts</a>
-                </li>
-              </ul>
-            </div>        
-          </nav>
-        </div>
-      </div>
-    </div>
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-  <div class="onepcssgrid-1000">
-    <div class="onerow">
-      <div class="col12 last content">
-        asda<br/>
-        asda<br/>
-        asda<br/>
-        asda<br/>
-        asda<br/>
-        <%= yield %>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/assets/css/zerogrid.css" />
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/responsive.css"/>
+    <link rel="stylesheet" href="/assets/css/responsiveslides.css" />
+
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100//assets/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
       </div>
-    </div>
-  </div>
+      <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="/assets/js/html5.js"></script>
+		<script src="/assets/js/css3-mediaqueries.js"></script>
+		<![endif]-->
 
+		<link href='/assets/images/favicon.ico' rel='icon' type='image/x-icon'/>
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/responsiveslides.js"></script>
+		<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				maxwidth: 962,
+				namespace: "centered-btns"
+			});
+		});
+		</script>
+	</head>
+	<body>
 
-</body>
-</html>
+		<!-- ----------- Header------------- -->
+		<header>
+			<div class="wrap-header zerogrid">
+				<div id="logo"><a href="#"><img src="/assets/images/logo.png"/></a></div>
+
+				<div id="search">
+					<div class="button-search"></div>
+					<input type="text" value="Search..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
+				</div>
+			</div>
+		</header>
+
+		<!-- ### NavBar ### -->
+		<%= render 'layouts/navbar' %>
+		<!-- ###  ### -->
+
+		<%= yield %>
+	</body>
+	</html>
